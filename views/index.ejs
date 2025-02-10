@@ -10,11 +10,16 @@
   <body>
     <% if (user) { %>
         <h1>Welcome to the app, <%= user.username %>!</h1>
+        <p>
+          <!-- new sign out link -->
+          <a href="/auth/logout">Sign out</a>
+        </p>
         <% } else { %>
         <h1>Welcome to the app, guest.</h1>
         <p>
-          <a href="/auth/sign-up">Sign up</a> or <a href="/auth/login">sign in</a>.
+          <a href="/auth/sign-up">Sign up</a> or <a href="/auth/login">Login</a>.
         </p>
         <% } %>
+        <p><a href="/vip-lounge">Get into the VIP Users Only lounge!</a></p>
   </body>
 </html>
